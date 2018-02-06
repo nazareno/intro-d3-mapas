@@ -88,6 +88,8 @@ E abrí-la num browser.
 Agora vamos começar a manipular as entidades geográficas que estão no nosso json. O legal de fazer isso na linha de comando é que tem muitas ferramentas para juntar arquivos linha-a-linha, filtrar linhas e coisas do tipo. Só que para que json funcione dessa forma, precisamos que as entidades dentro dele estejam em linhas diferentes. Num json normal isso não acontece, mas acontece em um NDJSON (newline-delimited json). Por isso, usaremos NDJSON:
 
 ```
+npm install -g ndjson-cli
+
 ndjson-split 'd.features' \
   < [geojson-entrada] \
   > [arquivo-saida.ndjson]
