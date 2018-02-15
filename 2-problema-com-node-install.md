@@ -23,12 +23,18 @@ xpto algum-argumento
 Por
 
 ```
-./node_modules/modulo_xpto/bin/xpto algum-argumento
+./node_modules/.bin/xpto algum-argumento
 ```
 
 Por exemplo:
 
 ```
 npm install shapefile
-./node_modules/shapefile/bin/shp2json < arquivo.shp > saida.json
+./node_modules/.bin/shp2json < arquivo.shp > saida.json
+```
+
+Outra forma de resolver isso é fazer o seguinte no terminal:
+
+```
+export PATH=$PATH:./node_modules/.bin
 ```
