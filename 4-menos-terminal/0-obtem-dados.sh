@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Cria um geojson simplificado e quantizado dos municípios da PB + dados do QEDU
+
 # OBTER E TRANSFORMAR OS DADOS ======================
 # Cria geometria projetada
 curl 'ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2016/UFs/PB/pb_municipios.zip' -o pb_municipios.zip
@@ -47,4 +49,4 @@ geo2topo -n \
 | toposimplify -p 1 -f \
 | topoquantize 1e5 \
 | topo2geo tracts=- \
-> geo4-municipios-e-aprendizado-simplificado.ndjson
+> geo4-municipios-e-aprendizado-simplificado.json
