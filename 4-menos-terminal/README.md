@@ -11,6 +11,7 @@ O mapa que queremos gerar é um de quão bem está o aprendizado dos alunos de e
 Considerando esses dados e os shapefiles em `pb_municipios.zip`, temos dois scripts para gerar o choropleth com a % de alunos com aprendizado adequado:
 
 *`0-obtem-dados.sh`* Baixa dados do IBGE, cruza eles com os dados do QEDU e produz um GeoJSON com as propriedades de cada feature incluindo os dados do QEDU.
+
 *`1-cria-mapa.sh`* Usa ferramentas de linha de comando para gerar um choropleth.
 
 Para termos certeza que você entendeu o processo, faça o seguinte:
@@ -36,4 +37,4 @@ Para os dados, sugiro que você use dados de educação do [Observatório do Pla
 
 Abrindo os arquivos Excel disponíveis lá, você vai perceber que embora os dados estejam lá, o formato é meio ingrato. O que funcionou bem para mim foi abrir o xls, copiar o trecho que tem o nome das variáveis e as linhas referentes aos municípios, colar isso em uma nova planilha e salvar como csv. No Mac, o csv gerado pelo Excel nunca fica com um encoding que eu consiga manipular na linha de comando, então faço essa última parte no google spreadsheets (dá para copiar do excel e colar lá).
 
-*Importante*: cuidado com as vírgulas que estão sendo usadas para casas decimais. Você precisa ou removê-las todas aqui ou em algum ponto no javascript. JS espera pontos, e não vírgulas. 
+*Importante*: cuidado com as vírgulas que estão sendo usadas para casas decimais. Você precisa ou removê-las todas aqui ou em algum ponto no javascript. JS espera pontos, e não vírgulas.
