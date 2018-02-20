@@ -26,8 +26,8 @@ var path = d3.geoPath();
 
 // a escala de cores
 var color = d3.scaleThreshold()
-      .domain(d3.range(0, 81, 20))
-      .range(d3.schemeOrRd[5]);
+      .domain(d3.range(20, 81, 20))
+      .range(d3.schemeOrRd[4]);
 
 // função aux definida em legenda-d3-cor.js
 desenhaLegenda(0, 81, color, "Aprendizado adequado (%)")

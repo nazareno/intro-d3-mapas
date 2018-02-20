@@ -35,7 +35,7 @@ var desenhaLegenda = function(min, max, escalaDeCor, nomeVariavel){
   g.call(d3.axisBottom(x)
       .tickSize(13)
       .tickFormat(function(x, i) { return (i ? x : x + "%"); })
-      .tickValues(escalaDeCor.domain()))
+      .tickValues(escalaDeCor.domain().concat(min)))
     .select(".domain")
       .remove();
 }
