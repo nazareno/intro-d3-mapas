@@ -3,9 +3,11 @@
 # Cria um geojson simplificado e quantizado dos municípios da PB + dados do QEDU
 
 # OBTER E TRANSFORMAR OS DADOS ======================
-# Cria geometria projetada
-curl 'ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2016/UFs/PB/pb_municipios.zip' -o pb_municipios.zip
+# Baixa e descompacta
+# curl 'ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2016/UFs/PB/pb_municipios.zip' -o pb_municipios.zip
 unzip pb_municipios.zip
+
+# Cria geometria projetada
 shp2json 25MUE250GC_SIR.shp --encoding 'utf8' \
   | geoproject \
     'd3.geoOrthographic().rotate([54, 14, -2]).fitSize([1000, 600], d)' \
