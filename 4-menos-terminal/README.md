@@ -31,7 +31,7 @@ Altere `3-mapa-interativo-1.html` também para que ele mostre sua variável e es
 
 ### Sua vez
 
-Agora já craque no funcionamento de d3 para mapas, você fará o processo completo de escolher dados, cruzá-los com uma geometria e criar um mmapa interativo legal. Do Brasil todo. Por município.
+Agora já craque no funcionamento de d3 para mapas, você fará o processo completo de escolher dados, cruzá-los com uma geometria e criar um mmapa interativo legal. Do Brasil todo. Por município. A geometria já projetada com todos os municípios do brasil está no diretório `/5-so-voces` desse repositório. 
 
 Para os dados, sugiro que você use dados de educação do [Observatório do Plano Nacional de Educação](http://www.observatoriodopne.org.br/downloads).
 
